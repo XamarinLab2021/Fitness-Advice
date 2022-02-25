@@ -17,7 +17,7 @@
   <li>notifikácie pre socialnu časť aplikácie</li>
   <li>vytvoriť časť kde budú môcť postovať recepty a fotky svojho a fitness progresu, rady typy</li>
  </li>
- 
+ <h2>Prvotné obrázky</h2>
  <img src="https://user-images.githubusercontent.com/91307618/155673804-4406022a-6031-4dc2-82e9-771eae0c12d6.png">
  <img src="https://user-images.githubusercontent.com/91307618/155673931-e2af2fdb-93bb-47ef-9505-ec16c09bc374.png">
  <img src="https://user-images.githubusercontent.com/91307618/155674056-38060f48-48dd-4408-a95f-3af48990b7e1.png">
