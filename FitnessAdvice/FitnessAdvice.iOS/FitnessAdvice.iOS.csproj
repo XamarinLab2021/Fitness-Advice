@@ -133,4 +133,7 @@
       <Name>FitnessAdvice</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\starting-screen.png" />
+  </ItemGroup>
 </Project>
