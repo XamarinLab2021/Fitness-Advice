@@ -12,7 +12,7 @@ using System.Text;
 
 namespace FitnessAdvice.Droid
 {
-        [Activity(Label = "Mobile App Name", Icon = "@drawable/icon", Theme = "@style/splashscreen", MainLauncher = true, NoHistory = true)]
+        [Activity(Label = "FitnessAdvice", Icon = "@mipmap/icon", Theme = "@style/splashscreen", MainLauncher = true, NoHistory = true)]
         public class SplashActivity : AppCompatActivity
         {
             protected override void OnResume()
