@@ -25,4 +25,8 @@ namespace FitnessAdvice
         {
         }
     }
+
+    internal class MainPage : Page
+    {
+    }
 }

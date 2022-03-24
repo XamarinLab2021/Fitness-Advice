@@ -13,12 +13,13 @@ using System.Text;
 namespace FitnessAdvice.Droid
 {
         [Activity(Label = "FitnessAdvice", Icon = "@mipmap/icon", Theme = "@style/splashscreen", MainLauncher = true, NoHistory = true)]
-        public class SplashActivity : AppCompatActivity
+        public class SplashActivity : Activity
         {
-            protected override void OnResume()
-            {
-                base.OnResume();
-                StartActivity(typeof(MainActivity));
-            }
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+            System.Threading.Thread.Sleep(500);
+            StartActivity(typeof(MainActivity));
+        }
         }
     }
