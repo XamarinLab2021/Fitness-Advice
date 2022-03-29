@@ -1,6 +1,4 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 
 namespace FitnessAdvice
 {
@@ -24,9 +22,5 @@ namespace FitnessAdvice
         protected override void OnResume()
         {
         }
-    }
-
-    internal class MainPage : Page
-    {
     }
 }

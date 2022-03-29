@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
-	<style name="splashscreen" parent="Theme.AppCompat.Light.NoActionBar">
-		<item name="android:windowBackground">@drawable/splashscreen</item>
+  <style name="MyTheme.Base" parent="Theme.AppCompat.Light">
+  </style>
+
+  <style name="MyTheme" parent="MyTheme.Base">
+  </style>
+
+	<style name="MyTheme.SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="android:windowBackground">@drawable/splash_screen_img</item>
 		<item name="android:windowNoTitle">true</item>
-	</style>
-	<style name="firstappears" parent="Theme.AppCompat.Light.NoActionBar">
-		   <item name="android:windowBackground">@drawable/firstappears</item>
-		</style>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowActionBar">true</item>
+  </style>
 </resources>
