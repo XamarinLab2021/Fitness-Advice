@@ -1,24 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FitnessAdvice.MainPage">
+             x:Class="FitnessAdvice.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="firstappears.png">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+        <AbsoluteLayout>
+            <Button ImageSource="dumbell_ico.png"
+                    AbsoluteLayout.LayoutBounds="10,695,75,75"
+                BackgroundColor="#8D99AE"
+            Clicked="Button_Clicked">
+            </Button>
+            <Button ImageSource="settings_ico.png"
+                    AbsoluteLayout.LayoutBounds="310,6,75,75"
+                BackgroundColor="#8D99AE"
+            Clicked="Button_Clicked_1">
+            </Button>
+            <Button ImageSource="meal_ico.png"
+                    AbsoluteLayout.LayoutBounds="310,695,75,75"
+                BackgroundColor="#8D99AE"
+            Clicked="Button_Clicked_2">
+            </Button>
+            <Label Text="Welcome to our brand new Fitness Application! 
+                   
+                   
+                   App upgrades coming soon! :)"
+                AbsoluteLayout.LayoutBounds="0,365"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Large"
+                   FontFamily="Lobster-Regular"
+                   TextColor="Black"/>
+        </AbsoluteLayout>
     </StackLayout>
 
 </ContentPage>

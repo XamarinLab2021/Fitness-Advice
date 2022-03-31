@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace FitnessAdvice
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class FirstAppears : ContentPage
+    public partial class Exercises : ContentPage
     {
-        public FirstAppears()
+        public Exercises()
         {
             InitializeComponent();
         }
