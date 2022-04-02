@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitnessAdvice.Meal"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="firstappears.png">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <AbsoluteLayout>
+                <Button ImageSource="back_png.png"
+                    AbsoluteLayout.LayoutBounds="10,10"
+                BackgroundColor="#8D99AE"
+            Clicked="Button_Clicked">
+                </Button>
+            </AbsoluteLayout>
+            <Label Text="Eating programs and Meal Forum coming soon!"
+                   TextColor="Black"
+                   FontSize="Large"
+                   HorizontalTextAlignment="Center"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

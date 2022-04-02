@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace FitnessAdvice
+namespace FitnessAdvice.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Exercises : ContentPage
+    public partial class FrontCore : ContentPage
     {
-        public Exercises()
+        public FrontCore()
         {
             InitializeComponent();
         }
