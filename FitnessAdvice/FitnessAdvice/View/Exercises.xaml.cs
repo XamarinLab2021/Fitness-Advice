@@ -24,7 +24,7 @@ namespace FitnessAdvice
 
         private async void Frontcore_Btn_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new FrontCore(), true);
+            await Navigation.PushAsync(new MainPage(), true);
         }
 
         private async void Backcore_Btn_Clicked(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace FitnessAdvice
 
         private async void Wholearms_Btn_Clicked(object sender, EventArgs e)
         {
-        await Navigation.PushAsync(new MainPage(), true);
+        await Navigation.PushAsync(new ArmsPage(), true);
         }
 
         private async void Wholelegs_Btn_Clicked(object sender, EventArgs e)

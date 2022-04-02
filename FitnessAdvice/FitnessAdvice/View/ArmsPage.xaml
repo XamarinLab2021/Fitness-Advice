@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitnessAdvice.View.ArmsPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="firstappears.png">
+    <ContentPage.Content>
+        <StackLayout>
+            <AbsoluteLayout>
+                <Button x:Name="Back_Btn"
+                    ImageSource="back_png.png"
+                    AbsoluteLayout.LayoutBounds="10,10"
+                BackgroundColor="#8D99AE"
+            Clicked="Back_Btn_Clicked"/>
+           
+                <Label x:Name="text"
+                       Text="ARMS"
+                       HorizontalTextAlignment="Center"
+                        AbsoluteLayout.LayoutBounds="160,20"
+                       FontSize="30"
+                       TextColor="Black"
+                       FontFamily="Franklin Gothic Medium	"/>
+            </AbsoluteLayout>
+            <Grid RowSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+
+
+
+                </Grid.ColumnDefinitions>
+                <Button x:Name="BodyWeight"
+                        BackgroundColor="#8D99AE"
+                       VerticalOptions="CenterAndExpand"
+                        Grid.Row="3"
+                       HorizontalOptions="CenterAndExpand"
+                        Text="BODYWEIGHT"
+                        FontSize="40"
+                        Clicked="BodyWeight_Clicked"
+                    >
+                </Button>
+                <Button x:Name="Weight_Lifting"
+                        BackgroundColor="#8D99AE"
+                        VerticalOptions="CenterAndExpand"
+                        Grid.Row="5"
+                        FontSize="40"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="WEIGHT LIFTING"
+                        Clicked="Weight_Lifting_Clicked"
+                        ></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>  
