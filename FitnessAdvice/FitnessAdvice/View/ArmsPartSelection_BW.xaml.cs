@@ -16,5 +16,30 @@ namespace FitnessAdvice.View
         {
             InitializeComponent();
         }
+
+        private async void Back_Btn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage(), true);
+        }
+
+        private async void Triceps_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage(), true);
+        }
+
+        private async void Biceps_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new BicepsBW(), true);
+        }
+
+        private async void Shoulders_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage(), true);
+        }
+
+        private async void Forearms_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage(), true);
+        }
     }
 }

@@ -1,12 +1,77 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FitnessAdvice.View.ArmsPartSelection_BW">
+             x:Class="FitnessAdvice.View.ArmsPartSelection_BW"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="firstappears.png">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <AbsoluteLayout>
+                <Button x:Name="Back_Btn"
+                    ImageSource="back_png.png"
+                    AbsoluteLayout.LayoutBounds="10,10"
+                BackgroundColor="#8D99AE"
+            Clicked="Back_Btn_Clicked"/>
+
+                <Label x:Name="text"
+                       Text="ARMS"
+                       HorizontalTextAlignment="Center"
+                        AbsoluteLayout.LayoutBounds="160,20"
+                       FontSize="30"
+                       TextColor="Black"
+                       FontFamily="Franklin Gothic Medium	"/>
+            </AbsoluteLayout>
+            <Grid RowSpacing="30">
+                <Grid.RowDefinitions>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="Biceps"
+                        TextColor="#FFFFFF"
+                        BackgroundColor="#78121E"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Text="BICEPS"
+                        FontSize="40"
+                        Clicked="Biceps_Clicked"/>
+
+                <Button x:Name="Triceps"
+                        TextColor="#FFFFFF"
+                        BackgroundColor="#78121E"
+                        VerticalOptions="CenterAndExpand"
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        FontSize="40"
+                        Text="TRICEPS"
+                        Clicked="Triceps_Clicked"/>
+
+                <Button x:Name="Shoulders"
+                        TextColor="#FFFFFF"
+                        BackgroundColor="#78121E"
+                        VerticalOptions="CenterAndExpand"
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        FontSize="40"
+                        Text="TRICEPS"
+                        Clicked="Shoulders_Clicked"/>
+
+                <Button x:Name="Forearms"
+                        TextColor="#FFFFFF"
+                        BackgroundColor="#78121E"
+                        VerticalOptions="CenterAndExpand"
+                        Grid.Row="4"
+                        Grid.Column="1"
+                        FontSize="40"
+                        Text="FOREARMS"
+                        Clicked="Forearms_Clicked"/>
+
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
