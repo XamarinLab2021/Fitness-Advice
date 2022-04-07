@@ -21,7 +21,7 @@
  <ul>
   <li>Dorobiť sekciu pre cviky (rozpracované)</li>
  </li>
- <h2>Demo 0.0.4</h2>
+ <h2>Demo 0.0.5</h2>
  <ul>
   <li>............................ (neni som veštec, takže ešte uvidíme ciele tohto dema :)) ............................</li>
  </li>
