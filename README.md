@@ -14,10 +14,14 @@
  </ul>
  <h2>Demo 0.0.3</h2>
  <ul>
-  <li>Urobiť navigáciu cez celú aplikáciu <B>✓</B> </li>
-  <li>Zkonštruovať zoznam pre cviky a pridať tam ASPOŇ jeden cvik <B>✓</B> </li>
+  <li>Urobiť navigáciu cez celú aplikáciu, čo sa týka cvikov <B>✓</B> </li>
+  <li>Zkonštruovať ASPOŇ jeden zoznam pre cviky a pridať tam ASPOŇ jeden cvik <B>✓</B> </li>
  </ul>
  <h2>Demo 0.0.4</h2>
  <ul>
-  <li>...... (neni som veštec, takže ešte uvidíme ciele tohto dema :)) .......</li>
+  <li>Dorobiť sekciu pre cviky (rozpracované)</li>
+ </li>
+ <h2>Demo 0.0.4</h2>
+ <ul>
+  <li>............................ (neni som veštec, takže ešte uvidíme ciele tohto dema :)) ............................</li>
  </li>
