@@ -58,7 +58,7 @@
                         Grid.Row="3"
                         Grid.Column="1"
                         FontSize="40"
-                        Text="TRICEPS"
+                        Text="SHOULDERS"
                         Clicked="Shoulders_Clicked"/>
 
                 <Button x:Name="Forearms"
