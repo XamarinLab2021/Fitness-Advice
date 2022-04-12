@@ -3,5 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FitnessAdvice.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <ControlTemplate x:Key="TemplateAllPages">
+                <StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="2*"/>
+                        </Grid.RowDefinitions>
+                        <Frame BorderColor="#f51e37"
+                               BackgroundColor = "#8d99ae">
+                        </Frame>
+                        <BoxView
+                            BackgroundColor="#cfd3d5"
+                            Grid.Row="1">
+                        </BoxView>
+                        <Frame
+                            BorderColor="#f51e37"
+                                Grid.Row ="2"
+                               BackgroundColor = "#8d99ae">
+                        </Frame>
+                    </Grid>
+                    <ContentPresenter />
+                </StackLayout>
+            </ControlTemplate>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

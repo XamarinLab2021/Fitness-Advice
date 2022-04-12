@@ -19,7 +19,7 @@ namespace FitnessAdvice.View
 
         private async void Back_Btn_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MainPage(), true);
+            await Navigation.PushAsync(new ArmsPage(), true);
         }
 
         private async void Triceps_Clicked(object sender, EventArgs e)

@@ -4,4 +4,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+	<color name="templateTopAndBottomRow">#8d99ae</color>
+	<color name="templateCoreRow">#cfd3d5</color>
+	<color name="templateBorder">#f51e37</color>
 </resources>

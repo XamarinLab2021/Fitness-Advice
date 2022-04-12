@@ -14922,16 +14922,25 @@ namespace FitnessAdvice.Droid
 			public const int switch_thumb_normal_material_light = 2131034323;
 			
 			// aapt resource value: 0x7F0500D4
-			public const int test_mtrl_calendar_day = 2131034324;
+			public const int templateBorder = 2131034324;
 			
 			// aapt resource value: 0x7F0500D5
-			public const int test_mtrl_calendar_day_selected = 2131034325;
+			public const int templateCoreRow = 2131034325;
 			
 			// aapt resource value: 0x7F0500D6
-			public const int tooltip_background_dark = 2131034326;
+			public const int templateTopAndBottomRow = 2131034326;
 			
 			// aapt resource value: 0x7F0500D7
-			public const int tooltip_background_light = 2131034327;
+			public const int test_mtrl_calendar_day = 2131034327;
+			
+			// aapt resource value: 0x7F0500D8
+			public const int test_mtrl_calendar_day_selected = 2131034328;
+			
+			// aapt resource value: 0x7F0500D9
+			public const int tooltip_background_dark = 2131034329;
+			
+			// aapt resource value: 0x7F0500DA
+			public const int tooltip_background_light = 2131034330;
 			
 			static Color()
 			{

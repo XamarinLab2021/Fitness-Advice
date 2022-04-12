@@ -4,7 +4,7 @@
              x:Class="FitnessAdvice.Meal"
              NavigationPage.HasNavigationBar="False"
              BackgroundImageSource="firstappears.png">
-    
+
     <ContentPage.Content>
         <StackLayout>
             <AbsoluteLayout>

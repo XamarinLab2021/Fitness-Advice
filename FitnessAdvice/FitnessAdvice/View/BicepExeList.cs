@@ -12,9 +12,11 @@ namespace FitnessAdvice.View
 		public BicepExeList()
 		{
 			Bicepcirses = new ObservableCollection<Exercise>();
-			ListView lstView = new ListView();
-			lstView.RowHeight = 60;
-			this.Title = "ListView Code Sample";
+            ListView lstView = new ListView
+            {
+                RowHeight = 60
+            };
+            this.Title = "ListView Code Sample";
 			lstView.ItemTemplate = new DataTemplate(typeof(BicepExeCell));
 			Bicepcirses.Add(new Exercise { Name = "Towel Bicep Curl (1 leg)", Type = "Isolation", });//Image = "BicepCurl.png"
 			///exercises.Add(new Exercise { Name = "Romaine Lettuce", Type = "Vegetable", Image = "lettuce.png" });

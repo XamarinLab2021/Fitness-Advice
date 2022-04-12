@@ -22,8 +22,10 @@ namespace FitnessAdvice.View
         {
             InitializeComponent();
 
-            Bicepcirses = new ObservableCollection<Exercise>();
-            Bicepcirses.Add(new Exercise { Name = "Towel Bicep Curl (1 leg)", Type = "Isolation", });//Image = "BicepCurl.png"
+            Bicepcirses = new ObservableCollection<Exercise>
+            {
+                new Exercise { Name = "Towel Bicep Curl (1 leg)", Type = "Isolation", }//Image = "BicepCurl.png"
+            };
             ///Bicepcirses.Add(new Exercise { Name = "Romaine Lettuce", Type = "Vegetable", Image = "lettuce.png" });
             ///Bicepcirses.Add(new Exercise { Name = "Zucchini", Type = "Vegetable", Image = "zucchini.png" });
             lstView.ItemsSource = Bicepcirses;
