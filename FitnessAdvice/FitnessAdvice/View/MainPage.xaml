@@ -3,41 +3,79 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:viewmodel="clr-namespace:FitnessAdvice.ViewModel"
              x:Class="FitnessAdvice.MainPage"
-             NavigationPage.HasNavigationBar="False"
-             BackgroundImageSource="firstappears.png">
+             NavigationPage.HasNavigationBar="False">
     
 <ContentPage.BindingContext>
     <viewmodel:MainViewModel/>
 </ContentPage.BindingContext>
-    <StackLayout>
-        <AbsoluteLayout>
-            <Button ImageSource="dumbell_ico.png"
-                    AbsoluteLayout.LayoutBounds="10,695,75,75"
-                BackgroundColor="#8D99AE"
-            Clicked="Button_Clicked">
-            </Button>
-            <Button ImageSource="settings_ico.png"
-                    AbsoluteLayout.LayoutBounds="310,6,75,75"
-                BackgroundColor="#8D99AE"
-            Clicked="Button_Clicked_1">
-            </Button>
-            <Button ImageSource="meal_ico.png"
-                    AbsoluteLayout.LayoutBounds="310,695,75,75"
-                BackgroundColor="#8D99AE"
-            Clicked="Button_Clicked_2">
-            </Button>
-            <Label Text="Welcome to our brand new Fitness Application! 
-                   
-                   
-                   App upgrades coming soon! :)"
-                AbsoluteLayout.LayoutBounds="0,365"
-                    HorizontalOptions="CenterAndExpand"
-                    VerticalOptions="CenterAndExpand"
-                   HorizontalTextAlignment="Center"
-                   FontSize="Large"
-                   FontFamily="Lobster-Regular"
-                   TextColor="Black"/>
-        </AbsoluteLayout>
-    </StackLayout>
-
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Frame
+            BorderColor="#f51e37"
+            BackgroundColor = "#8d99ae"
+            Grid.Row="0"
+            Grid.ColumnSpan="2">
+            <StackLayout
+                HorizontalOptions="End">
+                <Button
+                    ImageSource="settings_ico.png"
+                    BackgroundColor="#8D99AE"
+                    Clicked="Button_Clicked_1">
+                </Button>
+            </StackLayout>
+        </Frame>
+        <Frame
+            BackgroundColor="#cfd3d5"
+            Grid.Row="1"
+            Grid.ColumnSpan="2">
+            <!-- make &#x0a; (line break char code) a constant-->
+            <Label
+                Text="Welcome to our brand new Fitness Application!  App upgrades coming soon! :)"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                HorizontalTextAlignment="Center"
+                FontSize="Large"
+                FontFamily="Lobster-Regular"
+                TextColor="Black">
+            </Label>
+        </Frame>
+        <Frame
+            BorderColor="#f51e37"
+            BackgroundColor = "#8d99ae"
+            Grid.Row ="2"
+            Grid.ColumnSpan="2">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <Button
+                    ImageSource="dumbell_ico.png"
+                    BackgroundColor="#8D99AE"
+                    Clicked="Button_Clicked"
+                    Grid.Column="0">
+                </Button>
+                <Button
+                    ImageSource="meal_ico.png"
+                    BackgroundColor="#8D99AE"
+                    Clicked="Button_Clicked_2"
+                    Grid.Column="2">
+                </Button>
+            </Grid>
+        </Frame>
+    </Grid>
 </ContentPage>
