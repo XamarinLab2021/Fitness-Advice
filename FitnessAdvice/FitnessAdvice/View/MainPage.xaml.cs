@@ -1,8 +1,6 @@
-﻿using Android.Views;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System;
-using Android.Service.Controls;
 
 namespace FitnessAdvice
 {
