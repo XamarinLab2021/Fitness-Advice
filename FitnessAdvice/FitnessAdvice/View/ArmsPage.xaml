@@ -2,32 +2,54 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FitnessAdvice.View.ArmsPage"
-             NavigationPage.HasNavigationBar="False"
-             BackgroundImageSource="firstappears.png">
-    <ContentPage.Content>
-        <StackLayout>
-            <AbsoluteLayout>
-                <Button x:Name="Back_Btn"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.20*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.20*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Frame
+            BorderColor="#f51e37"
+            BackgroundColor = "#8d99ae"
+            Grid.Row="0"
+            Grid.ColumnSpan="2">
+            <StackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                <Button x:Name="Back"
+                        HorizontalOptions="Start"
                     ImageSource="back_png.png"
-                    AbsoluteLayout.LayoutBounds="10,10"
-                BackgroundColor="#8D99AE"
-            Clicked="Back_Btn_Clicked"/>
-           
-                <Label x:Name="text"
+                    BackgroundColor="#8D99AE"
+                    Clicked="Back_Clicked">
+                </Button>
+                
+                
+                <Label x:Name="ARMS"
                        Text="ARMS"
+                       Grid.Column="1"
                        HorizontalTextAlignment="Center"
-                        AbsoluteLayout.LayoutBounds="160,20"
+                       VerticalOptions="CenterAndExpand"
                        FontSize="30"
                        TextColor="Black"
-                       FontFamily="Franklin Gothic Medium	"/>
-            </AbsoluteLayout>
-            <Grid RowSpacing="10">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="auto"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                </Grid.ColumnDefinitions>
+                       FontFamily="Franklin Gothic Medium"/>
+                </Grid>
+            </StackLayout>
+        </Frame>
+        <Frame
+            BackgroundColor="#cfd3d5"
+            Grid.Row="1"
+            Grid.ColumnSpan="2">
+
+            <StackLayout>
                 <Button x:Name="BodyWeight"
                         BackgroundColor="#8D99AE"
                        VerticalOptions="CenterAndExpand"
@@ -47,7 +69,13 @@
                         Text="WEIGHT LIFTING"
                         Clicked="Weight_Lifting_Clicked"
                         ></Button>
-            </Grid>
-        </StackLayout>
-    </ContentPage.Content>
+            </StackLayout>
+        </Frame>
+        <Frame
+            BorderColor="#f51e37"
+            BackgroundColor = "#8d99ae"
+            Grid.Row ="2"
+            Grid.ColumnSpan="2">
+        </Frame>
+    </Grid>
 </ContentPage>  

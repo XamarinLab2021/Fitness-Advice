@@ -2,22 +2,39 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FitnessAdvice.Exercises"
-             NavigationPage.HasNavigationBar="False"
-             BackgroundImageSource="firstappears.png">
+             NavigationPage.HasNavigationBar="False">
 
-    <ContentPage.Content>
-        <StackLayout>
-            <AbsoluteLayout>
-                <Button x:Name="Back_Btn"
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.20*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.20*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Frame
+            BorderColor="#f51e37"
+            BackgroundColor = "#8d99ae"
+            Grid.Row="0"
+            Grid.ColumnSpan="2">
+            <StackLayout
+                HorizontalOptions="Start">
+                <Button x:Name="Back"
                     ImageSource="back_png.png"
-                    AbsoluteLayout.LayoutBounds="10,10"
-                BackgroundColor="#8D99AE"
-            Clicked="Back_Btn_Clicked">
+                    BackgroundColor="#8D99AE"
+                    Clicked="Back_Clicked">
                 </Button>
-            </AbsoluteLayout>
-                <Grid x:Name="MainGrid">
+            </StackLayout>
+        </Frame>
+        <Frame
+            BackgroundColor="#cfd3d5"
+            Grid.Row="1"
+            Grid.ColumnSpan="2">
+            <Grid x:Name="MainGrid">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="0.5*" />
+                    <RowDefinition Height="auto" />
                     <RowDefinition Height="auto" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
@@ -29,8 +46,6 @@
             x:Name="Frontcore_Btn"
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="Center"
-            HeightRequest="200"
-            WidthRequest="200"
             BackgroundColor="#CFD3D5"
             ImageSource="core_front.png"
             Clicked="Frontcore_Btn_Clicked"
@@ -41,8 +56,6 @@
             x:Name="Backcore_Btn"
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="Center"
-            WidthRequest="{Binding Width, Source={x:Reference Frontcore_Btn}}"
-            HeightRequest="{Binding Height, Source={x:Reference Frontcore_Btn}}"
             BackgroundColor="#CFD3D5"
             ImageSource="core_back.png"
             Clicked="Backcore_Btn_Clicked"
@@ -53,8 +66,6 @@
              x:Name="Wholearms_Btn"
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="Center"
-            WidthRequest="{Binding Width, Source={x:Reference Frontcore_Btn}}"
-            HeightRequest="{Binding Height, Source={x:Reference Frontcore_Btn}}"
             BackgroundColor="#CFD3D5"
             ImageSource="arms_whole.png"
             Clicked="Wholearms_Btn_Clicked"
@@ -65,15 +76,18 @@
             x:Name="Wholelegs_Btn"
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="Center"
-                    WidthRequest="{Binding Width, Source={x:Reference Frontcore_Btn}}"
-            HeightRequest="{Binding Height, Source={x:Reference Frontcore_Btn}}"
             BackgroundColor="#CFD3D5"
             ImageSource="legs_whole.png"
             Clicked="Wholelegs_Btn_Clicked"
             Grid.Row="2"
             Grid.Column="2"/>
-
             </Grid>
-        </StackLayout>
-    </ContentPage.Content>
+        </Frame>
+        <Frame
+            BorderColor="#f51e37"
+            BackgroundColor = "#8d99ae"
+            Grid.Row ="2"
+            Grid.ColumnSpan="2">
+        </Frame>
+    </Grid>
 </ContentPage>

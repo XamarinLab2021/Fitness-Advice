@@ -2,24 +2,49 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FitnessAdvice.Meal"
-             NavigationPage.HasNavigationBar="False"
-             BackgroundImageSource="firstappears.png">
+             NavigationPage.HasNavigationBar="False">
 
-    <ContentPage.Content>
-        <StackLayout>
-            <AbsoluteLayout>
-                <Button ImageSource="back_png.png"
-                    AbsoluteLayout.LayoutBounds="10,10"
-                BackgroundColor="#8D99AE"
-            Clicked="Button_Clicked">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.20*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.20*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Frame
+            BorderColor="#f51e37"
+            BackgroundColor = "#8d99ae"
+            Grid.Row="0"
+            Grid.ColumnSpan="2">
+            <StackLayout
+                HorizontalOptions="Start">
+                <Button x:Name="Back"
+                    ImageSource="back_png.png"
+                    BackgroundColor="#8D99AE"
+                    Clicked="Back_Clicked">
                 </Button>
-            </AbsoluteLayout>
-            <Label Text="Eating programs and Meal Forum coming soon!"
+            </StackLayout>
+        </Frame>
+        <Frame
+            BackgroundColor="#cfd3d5"
+            Grid.Row="1"
+            Grid.ColumnSpan="2">
+            <Label
+                Text="Eating programs and Meal Forum coming soon!"
                    TextColor="Black"
                    FontSize="Large"
                    HorizontalTextAlignment="Center"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+        </Frame>
+        <Frame
+            BorderColor="#f51e37"
+            BackgroundColor = "#8d99ae"
+            Grid.Row ="2"
+            Grid.ColumnSpan="2">
+        </Frame>
+    </Grid>
 </ContentPage>

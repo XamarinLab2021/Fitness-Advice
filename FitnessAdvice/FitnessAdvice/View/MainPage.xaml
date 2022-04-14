@@ -11,9 +11,9 @@
     
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
+            <RowDefinition Height="0.2*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="auto"/>
+            <RowDefinition Height="0.2*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -37,9 +37,8 @@
             BackgroundColor="#cfd3d5"
             Grid.Row="1"
             Grid.ColumnSpan="2">
-            <!-- make &#x0a; (line break char code) a constant-->
             <Label
-                Text="Welcome to our brand new Fitness Application!  App upgrades coming soon! :)"
+                Text="Welcome to our brand new Fitness Application! App upgrades coming soon! :)"
                 HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand"
                 HorizontalTextAlignment="Center"
@@ -54,9 +53,6 @@
             Grid.Row ="2"
             Grid.ColumnSpan="2">
             <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="auto"/>
-                </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="auto"/>
                     <ColumnDefinition Width="*"/>

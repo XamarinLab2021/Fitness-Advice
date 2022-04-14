@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitnessAdvice.ViewModel.MainTemplate">
+  <ContentView.Content>
+   <StackLayout Padding="20" Spacing="20">
+            <ContentView x:Name="HeaderFrame">
+                
+            </ContentView>
+            <ContentView x:Name="BodyContent"
+                         VerticalOptions="FillAndExpand">
+                <StackLayout>
+                    <Frame
+                         BackgroundColor="#8d99ae">
+                    </Frame>
+                </StackLayout>
+            </ContentView>
+
+            <ContentView x:Name="FooterFrame">
+                <StackLayout>
+                <Frame
+                        BorderColor="#f51e37"
+                        BackgroundColor = "#8d99ae"/>
+            </StackLayout>
+         </ContentView>
+  </StackLayout>
+  </ContentView.Content>
+</ContentView>
