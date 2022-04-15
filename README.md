@@ -16,11 +16,11 @@
  <ul>
   <li>Urobiť navigáciu cez celú aplikáciu, čo sa týka cvikov <B>✓</B> </li>
   <li>Zkonštruovať ASPOŇ jeden zoznam pre cviky pri Bicepse a pridať tam ASPOŇ jeden cvik (jeho názov a typ) <B>✓</B> </li>
-  <li>K danému cviku pridať obrázok, ktorý ma presmeruje na stránku, kde sa mi zobrazí ukážka a popis tohto cviku <B>čiastočne hotové!</B> </li>
+  <li>K danému cviku pridať obrázok, ktorý ma presmeruje na stránku, kde sa mi zobrazí ukážka a popis tohto cviku <B>(čiastočne hotové!)</B> </li>
  </ul>
  <h2>Demo 0.0.4</h2>
  <ul>
-  <li>Dokončiť sekciu - Cviky <u>(rozpracované!)</u></li>
+  <li>Dokončiť sekciu - Cviky <B>(rozpracované!)</B></li>
  </li>
  <h2>Demo 0.1.0</h2>
  <ul>
