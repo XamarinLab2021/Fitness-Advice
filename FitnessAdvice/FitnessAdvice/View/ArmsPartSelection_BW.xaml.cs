@@ -17,11 +17,6 @@ namespace FitnessAdvice.View
             InitializeComponent();
         }
 
-        private async void Back_Btn_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ArmsPage(), true);
-        }
-
         private async void Triceps_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MainPage(), true);
@@ -40,6 +35,11 @@ namespace FitnessAdvice.View
         private async void Forearms_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MainPage(), true);
+        }
+
+        private async void Back_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ArmsPage(), true);
         }
     }
 }

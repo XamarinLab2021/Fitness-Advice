@@ -12,11 +12,6 @@ namespace FitnessAdvice.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class BicepsBW : ContentPage
     {
-
-        private void Back_Btn_Clicked(object sender, EventArgs e)
-        {
-
-        }
         public ObservableCollection<Exercise> Bicepcirses { get; set; }
         public BicepsBW()
         {
@@ -24,11 +19,20 @@ namespace FitnessAdvice.View
 
             Bicepcirses = new ObservableCollection<Exercise>
             {
-                new Exercise { Name = "Towel Bicep Curl (1 leg)", Type = "Isolation", }//Image = "BicepCurl.png"
-            };
-            ///Bicepcirses.Add(new Exercise { Name = "Romaine Lettuce", Type = "Vegetable", Image = "lettuce.png" });
-            ///Bicepcirses.Add(new Exercise { Name = "Zucchini", Type = "Vegetable", Image = "zucchini.png" });
+                new Exercise { Name = "Bicep towel curl", Type = "Isolation", Image = "BicepIcon.png"}
+
+        };
             lstView.ItemsSource = Bicepcirses;
+        }
+
+        private async void Back_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ArmsPartSelection_BW(), true);
+        }
+
+        private async void Bicep_Curl_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ArmsPartSelection_BW(), true);//nastavit na ukazkovu page alebo okno s ukazkou cviku
         }
     }
 }

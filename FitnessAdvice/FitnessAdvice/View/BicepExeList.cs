@@ -11,7 +11,7 @@ namespace FitnessAdvice.View
 		public ObservableCollection<Exercise> Bicepcirses { get; set; }
 		public BicepExeList()
 		{
-			Bicepcirses = new ObservableCollection<Exercise>();
+            Bicepcirses = new ObservableCollection<Exercise>();
             ListView lstView = new ListView
             {
                 RowHeight = 60

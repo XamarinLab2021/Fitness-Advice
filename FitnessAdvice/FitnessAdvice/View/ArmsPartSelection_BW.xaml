@@ -2,76 +2,111 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FitnessAdvice.View.ArmsPartSelection_BW"
-             NavigationPage.HasNavigationBar="False"
-             BackgroundImageSource="firstappears.png">
-    <ContentPage.Content>
-        <StackLayout>
-            <AbsoluteLayout>
-                <Button x:Name="Back_Btn"
-                    ImageSource="back_png.png"
-                    AbsoluteLayout.LayoutBounds="10,10"
-                BackgroundColor="#8D99AE"
-            Clicked="Back_Btn_Clicked"/>
+             NavigationPage.HasNavigationBar="False">
 
-                <Label x:Name="text"
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.20*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.20*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Frame
+            BorderColor="#f51e37"
+            BackgroundColor = "#8d99ae"
+            Grid.Row="0"
+            Grid.ColumnSpan="2">
+            <StackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="Back"
+                        HorizontalOptions="Start"
+                    ImageSource="back_png.png"
+                    BackgroundColor="#8D99AE"
+                    Clicked="Back_Clicked">
+                    </Button>
+
+
+                    <Label x:Name="ARMS"
                        Text="ARMS"
+                       Grid.Column="1"
                        HorizontalTextAlignment="Center"
-                        AbsoluteLayout.LayoutBounds="160,20"
+                       VerticalOptions="CenterAndExpand"
                        FontSize="30"
                        TextColor="Black"
-                       FontFamily="Franklin Gothic Medium	"/>
-            </AbsoluteLayout>
-            <Grid RowSpacing="30">
-                <Grid.RowDefinitions>
+                       FontFamily="Franklin Gothic Medium"/>
+                </Grid>
+            </StackLayout>
+        </Frame>
+        <Frame
+            BackgroundColor="#cfd3d5"
+            Grid.Row="1"
+            Grid.ColumnSpan="2">
+            <StackLayout>
+                <Grid RowSpacing="68">
+                    <Grid.RowDefinitions>
+                        
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
 
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-
-                    <ColumnDefinition Width="auto"></ColumnDefinition>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Button x:Name="Biceps"
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="Biceps"
                         TextColor="#FFFFFF"
                         BackgroundColor="#78121E"
-                        Grid.Row="1"
+                        Grid.Row="0"
                         Grid.Column="1"
                         Text="BICEPS"
                         FontSize="40"
                         Clicked="Biceps_Clicked"/>
 
-                <Button x:Name="Triceps"
+                    <Button x:Name="Triceps"
+                        TextColor="#FFFFFF"
+                        BackgroundColor="#78121E"
+                        VerticalOptions="CenterAndExpand"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        FontSize="40"
+                        Text="TRICEPS"
+                        Clicked="Triceps_Clicked"/>
+
+                    <Button x:Name="Shoulders"
                         TextColor="#FFFFFF"
                         BackgroundColor="#78121E"
                         VerticalOptions="CenterAndExpand"
                         Grid.Row="2"
                         Grid.Column="1"
                         FontSize="40"
-                        Text="TRICEPS"
-                        Clicked="Triceps_Clicked"/>
+                        Text="SHOULDERS"
+                        Clicked="Shoulders_Clicked"/>
 
-                <Button x:Name="Shoulders"
+                    <Button x:Name="Forearms"
                         TextColor="#FFFFFF"
                         BackgroundColor="#78121E"
                         VerticalOptions="CenterAndExpand"
                         Grid.Row="3"
                         Grid.Column="1"
                         FontSize="40"
-                        Text="SHOULDERS"
-                        Clicked="Shoulders_Clicked"/>
-
-                <Button x:Name="Forearms"
-                        TextColor="#FFFFFF"
-                        BackgroundColor="#78121E"
-                        VerticalOptions="CenterAndExpand"
-                        Grid.Row="4"
-                        Grid.Column="1"
-                        FontSize="40"
                         Text="FOREARMS"
                         Clicked="Forearms_Clicked"/>
 
-            </Grid>
-        </StackLayout>
-    </ContentPage.Content>
+                </Grid>
+            </StackLayout>
+        </Frame>
+        <Frame
+            BorderColor="#f51e37"
+            BackgroundColor = "#8d99ae"
+            Grid.Row ="2"
+            Grid.ColumnSpan="2">
+        </Frame>
+    </Grid>
 </ContentPage>
