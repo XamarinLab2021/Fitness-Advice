@@ -32,7 +32,7 @@ namespace FitnessAdvice.View
 
         private async void Bicep_Curl_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ArmsPartSelection_BW(), true);//nastavit na ukazkovu page alebo okno s ukazkou cviku
+            await Navigation.PushAsync(new BicepTowelCurl(), true);//nastavit na ukazkovu page alebo okno s ukazkou cviku
         }
     }
 }
