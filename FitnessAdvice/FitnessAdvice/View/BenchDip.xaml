@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FitnessAdvice.View.BicepsBW"
+             x:Class="FitnessAdvice.View.BenchDip"
              NavigationPage.HasNavigationBar="False">
+
 
     <Grid>
         <Grid.RowDefinitions>
@@ -34,12 +35,12 @@
                     </Button>
 
 
-                    <Label x:Name="Biceps"
-                       Text="BW BICEPS"
+                    <Label x:Name="PreviewPage"
+                       Text="Bench Dip"
                        Grid.Column="1"
                        HorizontalTextAlignment="Center"
                        VerticalOptions="CenterAndExpand"
-                       FontSize="24"
+                       FontSize="20"
                        TextColor="Black"
                        FontFamily="Franklin Gothic Medium"/>
                 </Grid>
@@ -50,31 +51,31 @@
             Grid.Row="1"
             Grid.ColumnSpan="2">
             <StackLayout>
-                <ListView x:Name="lstView" RowHeight="60">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ViewCell>
-                                <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" BackgroundColor="LightGray" >
-                                    <StackLayout Orientation="Vertical">
-                                        <Label Text = "{Binding Name}" FontSize="24" AbsoluteLayout.LayoutBounds="0.25, 0.25, 400, 40" TextColor="Black"/>
-                                        <Label Text = "{Binding Type}" AbsoluteLayout.LayoutBounds="50, 35, 200, 25" TextColor="DarkSlateGray"/>
-                                    </StackLayout>
-                                    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-                                        <Button x:Name="Bicep_Curl"  Clicked="Bicep_Curl_Clicked" BackgroundColor="LightGray" ImageSource="{Binding Image}"/>
-                                    </StackLayout>
-                                </StackLayout>
-                            </ViewCell>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Bench_Dip.png" WidthRequest="200" HeightRequest="200"
+                            Grid.Column="1"/>
+                </Grid>
+                <Label Text="Will these dips kill your triceps?" TextColor="IndianRed" FontSize="30" HorizontalTextAlignment="Center"/>
+
+
+                <Label TextColor="Black" FontSize="20" HorizontalTextAlignment="Center" Text="A bench dip is a medium-intensity exercise that uses your own body weight to strengthen your triceps. Bench dips are fairly simple to learn and can be done almost anywhere. Add bench dips to your workouts if you're looking for new ways to strengthen and tone your arms.">
+                </Label>
             </StackLayout>
         </Frame>
         <Frame
-            BorderColor="#f51e37"
+        BorderColor="#f51e37"
             BackgroundColor = "#8d99ae"
             Grid.Row ="2"
             Grid.ColumnSpan="2">
-            <Label TextColor="Red" FontSize="Subtitle" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="By clicking on the IMAGE in the Exercise List will redirect you to the Exercise Preview Page!"/>
+            <Label TextColor="Purple" FontSize="Small" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="
+Get to the bench. Hing at the elbow (hands next to your body), lower your body down as far as you can go, or until your arms form a 90-degree angle.
+Push up through your palms back to start.
+"/>
         </Frame>
     </Grid>
 </ContentPage>

@@ -39,7 +39,7 @@
                        Grid.Column="1"
                        HorizontalTextAlignment="Center"
                        VerticalOptions="CenterAndExpand"
-                       FontSize="30"
+                       FontSize="24"
                        TextColor="Black"
                        FontFamily="Franklin Gothic Medium"/>
                 </Grid>

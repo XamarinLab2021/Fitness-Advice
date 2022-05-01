@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FitnessAdvice.View.BicepsBW"
+             x:Class="FitnessAdvice.View.TricepBW"
              NavigationPage.HasNavigationBar="False">
 
     <Grid>
@@ -34,8 +34,8 @@
                     </Button>
 
 
-                    <Label x:Name="Biceps"
-                       Text="BW BICEPS"
+                    <Label x:Name="Triceps"
+                       Text="BW TRICEPS"
                        Grid.Column="1"
                        HorizontalTextAlignment="Center"
                        VerticalOptions="CenterAndExpand"
@@ -50,7 +50,7 @@
             Grid.Row="1"
             Grid.ColumnSpan="2">
             <StackLayout>
-                <ListView x:Name="lstView" RowHeight="60">
+                <ListView x:Name="lstview" RowHeight="60">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -60,7 +60,7 @@
                                         <Label Text = "{Binding Type}" AbsoluteLayout.LayoutBounds="50, 35, 200, 25" TextColor="DarkSlateGray"/>
                                     </StackLayout>
                                     <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-                                        <Button x:Name="Bicep_Curl"  Clicked="Bicep_Curl_Clicked" BackgroundColor="LightGray" ImageSource="{Binding Image}"/>
+                                        <Button x:Name="Bench_Dip"  Clicked="Bench_Dip_Clicked" BackgroundColor="LightGray" ImageSource="{Binding Image}"/>
                                     </StackLayout>
                                 </StackLayout>
                             </ViewCell>
