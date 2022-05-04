@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitnessAdvice.View.ElevatedPikuPU"
+             NavigationPage.HasNavigationBar="False">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.20*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.20*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Frame
+            BorderColor="#f51e37"
+            BackgroundColor = "#8d99ae"
+            Grid.Row="0"
+            Grid.ColumnSpan="2">
+            <StackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="Back"
+                        HorizontalOptions="Start"
+                    ImageSource="back_png.png"
+                    BackgroundColor="#8D99AE"
+                    Clicked="doplnit">
+                    </Button>
+
+
+                    <Label x:Name="PreviewPage"
+                       Text="Elevated Pike PU"
+                       Grid.Column="1"
+                       HorizontalTextAlignment="Center"
+                       VerticalOptions="CenterAndExpand"
+                       FontSize="20"
+                       TextColor="Black"
+                       FontFamily="Franklin Gothic Medium"/>
+                </Grid>
+            </StackLayout>
+        </Frame>
+        <Frame
+            BackgroundColor="#cfd3d5"
+            Grid.Row="1"
+            Grid.ColumnSpan="2">
+            <StackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="ElevatedPikeP.png" WidthRequest="200" HeightRequest="200"
+                            Grid.Column="1"/>
+                </Grid>
+                <Label Text="Is this good for your shoulders?" TextColor="IndianRed" FontSize="30" HorizontalTextAlignment="Center"/>
+
+
+                <Label TextColor="Black" FontSize="20" HorizontalTextAlignment="Center" Text="The Foot Elevated Pike Push-Up is a great bodyweight exercise to develop strong shoulders. If you're looking to build the strength required for handstand push-ups, this drill is perfect for you. The only equipment you'll need is an object to elevate your feet.">
+                </Label>
+            </StackLayout>
+        </Frame>
+        <Frame
+        BorderColor="#f51e37"
+            BackgroundColor = "#8d99ae"
+            Grid.Row ="2"
+            Grid.ColumnSpan="2">
+            <Label TextColor="Purple" FontSize="Small" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Get your feet onto that object and place your hands on the ground, and pike through the hips. Bend the elbows, reaching them back towards your body. Press back up to your start position."/>
+        </Frame>
+    </Grid>
+</ContentPage>

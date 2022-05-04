@@ -29,7 +29,7 @@ namespace FitnessAdvice.View
 
         private async void Shoulders_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ShouldersBW(), true);
+            await Navigation.PushAsync(new ShoulderBW(), true);
         }
 
         private async void Forearms_Clicked(object sender, EventArgs e)
