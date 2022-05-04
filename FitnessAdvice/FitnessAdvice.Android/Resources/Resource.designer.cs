@@ -14,7 +14,7 @@ namespace FitnessAdvice.Droid
 {
 	
 	
-	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "12.1.0.11")]
 	public partial class Resource
 	{
 		
@@ -16700,7 +16700,7 @@ namespace FitnessAdvice.Droid
 			public const int settings_ico = 2131165336;
 			
 			// aapt resource value: 0x7F070099
-			public const int ShouldersIcon = 2131165337;
+			public const int ShoulderIcon = 2131165337;
 			
 			// aapt resource value: 0x7F07009A
 			public const int splash_screen = 2131165338;

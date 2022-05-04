@@ -143,10 +143,10 @@
     <AndroidResource Include="Resources\drawable\TricepIcon.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ShouldersIcon.jfif" />
+    <AndroidResource Include="Resources\drawable\ElevatedPikeP.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\ElevatedPikeP.png" />
+    <AndroidResource Include="Resources\drawable\ShoulderIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

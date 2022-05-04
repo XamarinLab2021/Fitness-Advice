@@ -10,11 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace FitnessAdvice.View
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ElevatedPikePU : ContentView
+	public partial class ElevatedPikeP : ContentPage
 	{
-		public ElevatedPikePU ()
+		public ElevatedPikeP ()
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private async void Back_Clicked(object sender, EventArgs e)
+        {
+			await Navigation.PushAsync(new ShoulderBW(), true);
+        }
+    }
 }

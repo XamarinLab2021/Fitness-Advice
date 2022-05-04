@@ -43,7 +43,7 @@
     <EmbeddedResource Update="View\BicepTowelCurl.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\ElevatedPikePU.xaml">
+    <EmbeddedResource Update="View\ElevatedPikeP.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\Exercises.xaml">
