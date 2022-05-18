@@ -17,9 +17,9 @@ namespace FitnessAdvice.View
             InitializeComponent();
         }
 
-        private void Back_Clicked(object sender, EventArgs e)
+        private async void Back_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new BicepsWL(), true);
         }
     }
 }
