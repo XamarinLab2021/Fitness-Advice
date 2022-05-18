@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitnessAdvice.View.IsometricWallPush"
+             NavigationPage.HasNavigationBar="False">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.20*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.20*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Frame
+            BorderColor="#f51e37"
+            BackgroundColor = "#8d99ae"
+            Grid.Row="0"
+            Grid.ColumnSpan="2">
+            <StackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="Back"
+                        HorizontalOptions="Start"
+                    ImageSource="back_png.png"
+                    BackgroundColor="#8D99AE"
+                    Clicked="Back_Clicked">
+                    </Button>
+
+
+                    <Label x:Name="PreviewPage"
+                       Text="Isometric wall push"
+                       Grid.Column="1"
+                       HorizontalTextAlignment="Center"
+                       VerticalOptions="CenterAndExpand"
+                       FontSize="20"
+                       TextColor="Black"
+                       FontFamily="Franklin Gothic Medium"/>
+                </Grid>
+            </StackLayout>
+        </Frame>
+        <Frame
+            BackgroundColor="#cfd3d5"
+            Grid.Row="1"
+            Grid.ColumnSpan="2">
+            <StackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Isometric_wall_push.jpg" WidthRequest="200" HeightRequest="200"
+                            Grid.Column="1"/>
+                </Grid>
+                <Label Text="Will this exercise strengthen your forearms?" TextColor="IndianRed" FontSize="30" HorizontalTextAlignment="Center"/>
+
+
+                <Label TextColor="Black" FontSize="20" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Text="Yes it definitely will! Isometric exercises place tension on particular muscles without moving the surrounding joints. By applying constant tension to the muscles, isometric exercises can be useful for improving physical endurance and posture by strengthening and stabilizing the muscles.">
+                </Label>
+            </StackLayout>
+        </Frame>
+        <Frame
+        BorderColor="#f51e37"
+            BackgroundColor = "#8d99ae"
+            Grid.Row ="2"
+            Grid.ColumnSpan="2">
+            <Label TextColor="Purple" FontSize="Small" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Stand in front of a wall with your hands on the wall. Keeping arms straight (but not locking elbows), press firmly into the wall for 30 seconds. Release. Repeat 2–3 times."/>
+        </Frame>
+    </Grid>
+</ContentPage>
