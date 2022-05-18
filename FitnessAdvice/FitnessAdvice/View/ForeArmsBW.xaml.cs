@@ -32,7 +32,7 @@ namespace FitnessAdvice.View
 
         private async void Isometric_wall_push_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new (), true);
+            await Navigation.PushAsync(new IsometricWallPush(), true);
         }
     }
 }
