@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FitnessAdvice.SettingsBasic"
+             x:Class="FitnessAdvice.View.AppVersion"
              NavigationPage.HasNavigationBar="False">
 
     <Grid>
@@ -32,8 +32,8 @@
                     BackgroundColor="#8D99AE"
                     Clicked="Back_Clicked">
                     </Button>
-                    <Label x:Name="SettingsPage"
-                       Text="SETTINGS"
+                    <Label x:Name="Version"
+                       Text="VERSION"
                        Grid.Column="1"
                        HorizontalTextAlignment="Center"
                        VerticalOptions="CenterAndExpand"
@@ -42,32 +42,17 @@
                        FontFamily="Franklin Gothic Medium"/>
                 </Grid>
             </StackLayout>
-                
+
         </Frame>
         <Frame
             BackgroundColor="#cfd3d5"
             Grid.Row="1"
             Grid.ColumnSpan="2">
             <StackLayout>
-                <StackLayout>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                    </Grid>
-                <Button
-                    x:Name="AppVersion"
-                        BackgroundColor="#78121E"
-                        Grid.Row="3"
-                    TextColor="#FFFFFF"
-                       HorizontalOptions="Center"
-                        Text="VERSION"
-                        FontSize="40"
-                        Clicked="AppVersion_Clicked">
-                </Button>
-                </StackLayout>
-            <Entry x:Name="UR_BW" Placeholder="Your bodyweight (KGs)"  VerticalOptions="Start" Completed="UR_BW_Completed"/>
+                <Label  FontSize="32" Text="CURRENT VERSION:" TextColor="Black" />
+                <Label  FontSize="24" Text="0.0.4" />
+                <Label FontSize="32" Text="LATEST UPDATES:" TextColor="Black" > </Label>
+                <Label  FontSize="24" Text="This page and the Settings one :) (ver. 0.1.0 in progress) " />
             </StackLayout>
         </Frame>
         <Frame
@@ -75,6 +60,7 @@
             BackgroundColor = "#8d99ae"
             Grid.Row ="2"
             Grid.ColumnSpan="2">
+            <Label FontSize="20" HorizontalTextAlignment="Center" TextColor="DarkRed" VerticalOptions="CenterAndExpand" Text="Our team is still working on updates and is making our app better!" />
         </Frame>
     </Grid>
 </ContentPage>

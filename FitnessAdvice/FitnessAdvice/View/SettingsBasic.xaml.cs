@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FitnessAdvice.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,21 @@ namespace FitnessAdvice
         public SettingsBasic()
         {
             InitializeComponent();
+        }
+       
+        private async void Back_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage(), true);
+        }
+
+        private void UR_BW_Completed(object sender, EventArgs e)
+        {
+          //setter alebo ine...
+        }
+
+        private async void AppVersion_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AppVersion(), true);
         }
     }
 }
