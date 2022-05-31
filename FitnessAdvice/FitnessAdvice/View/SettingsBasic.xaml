@@ -49,25 +49,27 @@
             Grid.Row="1"
             Grid.ColumnSpan="2">
             <StackLayout>
-                <StackLayout>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                    </Grid>
                 <Button
                     x:Name="AppVersion"
                         BackgroundColor="#78121E"
                         Grid.Row="3"
                     TextColor="#FFFFFF"
-                       HorizontalOptions="Center"
+                       
                         Text="VERSION"
                         FontSize="40"
                         Clicked="AppVersion_Clicked">
                 </Button>
-                </StackLayout>
-            <Entry x:Name="UR_BW" Placeholder="Your bodyweight (KGs)"  VerticalOptions="Start" Completed="UR_BW_Completed"/>
+                <Button x:Name="LoginPage"
+                        BackgroundColor="#78121E"
+                        
+                    TextColor="#FFFFFF"
+                       
+                        Text="LOG IN"
+                        FontSize="40"
+                        Clicked="LoginPage_Clicked">
+                    
+                </Button>
+                <Entry x:Name="UR_BW" Placeholder="Your bodyweight (KGs)"  VerticalOptions="Start" Completed="UR_BW_Completed"/>
             </StackLayout>
         </Frame>
         <Frame

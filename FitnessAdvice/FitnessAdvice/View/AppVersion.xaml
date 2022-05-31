@@ -49,10 +49,17 @@
             Grid.Row="1"
             Grid.ColumnSpan="2">
             <StackLayout>
-                <Label  FontSize="32" Text="CURRENT VERSION:" TextColor="Black" />
-                <Label  FontSize="24" Text="0.0.4" />
-                <Label FontSize="32" Text="LATEST UPDATES:" TextColor="Black" > </Label>
-                <Label  FontSize="24" Text="This page and the Settings one :) (ver. 0.1.0 in progress) " />
+            <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Label  FontSize="32" Text="CURRENT VERSION:" TextColor="Black" Grid.Row="0 " />
+                <Label  FontSize="24" Text="0.0.4" Grid.Row="1"/>
+                <Label FontSize="32" Text="LATEST UPDATES:" TextColor="Black" Grid.Row="4" > </Label>
+                        <Label  FontSize="24" Text="This page and the Settings one :) (ver. 0.1.0 in progress) " Grid.Row="5" />
+                </Grid>
             </StackLayout>
         </Frame>
         <Frame

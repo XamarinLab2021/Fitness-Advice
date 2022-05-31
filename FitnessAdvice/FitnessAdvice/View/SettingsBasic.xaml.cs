@@ -32,5 +32,10 @@ namespace FitnessAdvice
         {
             await Navigation.PushAsync(new AppVersion(), true);
         }
+
+        private async void LoginPage_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new LoginPage(), true);
+        }
     }
 }
