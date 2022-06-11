@@ -22,7 +22,9 @@
  <ul>
   <li>Dokončiť sekciu - Cviky <B>(rozpracované!)</B></li>
  </li>
+ </ul>
  <h2>Demo 0.1.0</h2>
  <ul>
   <li>Stránka pre Základné nastavenia -> v nej navigácia na: <B> Info. o appke ; Login   ✓</B> (Registrácia s databázou je vo výstavbe :) ) 
 </li>
+  </ul>
