@@ -25,4 +25,3 @@
  <h2>Demo 0.1.0</h2>
  <ul>
   <li>.............. (ešte si rozmyslím ciele tohto dema, ale pravdepodobne budem pracovať na základnych nastaveniach pre používateľov ) ..............</li>
- </li>
